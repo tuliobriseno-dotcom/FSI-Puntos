@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta de Saldo</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #305AAA;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .error { color: red; }
+    .ok { color: green; }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Saldo de puntos</h2>
+  <input type="text" id="tarjeta" placeholder="Número de tarjeta">
+  <button onclick="consultar()">Consultar</button>
+  <div id="resultado"></div>
+</div>
+
+<!-- 🔥 Script externo (esto evita el error de Cloudflare) -->
+<script src="/app.js"></script>
+
+</body>
+</html>
